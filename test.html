@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article Title - Site Title</title>
+  <style type="text/css">
+    :root {
+      --primary-color: #007bff;
+      --text-color: #333;
+      --background-color: #fff;
+      --link-hover-color: #0056b3;
+      --border-color: #999;
+    }
+
+    body {
+      margin: 0;
+      padding: 0 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+
+    @media (min-width: 768px) {
+      body {
+        max-width: 750px;
+        margin: auto;
+      }
+    }
+
+    @media (min-width: 992px) {
+      body {
+        max-width: 970px;
+      }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    header nav a {
+      margin: 0 15px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+
+    footer {
+      padding: 1rem 0;
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+      margin-top: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--primary-color);
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover-color);
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    pre code {
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      display: block;
+      margin-top: 10px;
+      font-size: 0.85rem;
+    }
+
+    code {
+      display: inline-block;
+    }
+
+    .meta {
+      padding: 0 20px;
+      color: #666;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .content {
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+  <div>
+    <h1><a href="/">Site Title</a></h1>
+    <h2><a href="/">Site Subtitle</a></h2>
+  </div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/release">Release</a>
+    <a href="/about">About</a>
+    <a href="/rss">RSS</a>
+  </nav>
+</header>
+<main>
+  <article class="content">
+    <div>
+      <h1>Article Title</h1>
+    </div>
+    <div>
+      <div class="meta"><span>2019-12-03 11:02:03</span></div>
+      <div class="meta">
+        <span class="tag"><a href="#">#Tag-1</a></span>
+        <span class="tag"><a href="#">#Tag-2</a></span>
+        <span class="tag"><a href="#">#Tag-3</a></span>
+      </div>
+    </div>
+    <div>
+      <h2>Section 1</h2>
+      <p>This is a test. Letter <code>A</code> is here.</p>
+      <p>This style is inspired by <a href="http://bettermotherfuckingwebsite.com/">this website</a>.</p>
+      <h3>Subsection 1.1</h3>
+      <p>This is a test code:</p>
+      <pre><code>#include &lt;cstdio&gt;
+int main()
+{
+    return 0;
+}</code></pre>
+      <h3>Subsection 1.2</h3>
+      <h4>Subsection 1.2.1</h4>
+      <h5>Subsection 1.2.1.1</h5>
+      <h6>Subsection 1.2.1.1.1</h6>
+      <p>This is a normal line.</p>
+      <p><b>This is a bold line.</b></p>
+      <p><i>This is a italic line.</i></p>
+      <h2>Section 2</h2>
+      <p>This is a test.</p>
+      <h2>Section 3</h2>
+      <p>This is a test <a href="abc">link</a>.</p>
+      <p>This is a test ordered list:</p>
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ol>
+      <p>This is a test unordered list:</p>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
+      <p>This is a test table:</p>
+      <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+        <tr>
+          <td>Cell 3</td>
+          <td>Cell 4</td>
+        </tr>
+      </table>
+    </div>
+  </article>
+</main>
+<footer>
+  <div>
+    <div>
+      Licensed under the MIT License.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
